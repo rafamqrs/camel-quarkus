@@ -1,0 +1,27 @@
+<customer>
+    <orgUnitId>0000</orgUnitId>
+    <blackListReason>0</blackListReason>
+    <active>true</active>
+    <test>false</test>
+    <displayName>Test Full Customer</displayName>
+    <riskCategoryId>0</riskCategoryId>
+    <customerTypeId>2</customerTypeId>
+    <cancellationReasonId>0</cancellationReasonId>
+    <txnReceiptModeId>0</txnReceiptModeId>
+    <identifications>
+    <type>0</type>
+    <identification>+49987654329</identification>
+    </identifications>
+
+    <addresses>
+    <addressType>0</addressType>
+    <addressStatus>0</addressStatus>
+    <firstName>Test</firstName>
+    <lastName>Customer 0815</lastName>
+    <street1>Test Street</street1>
+    <houseNumber>1</houseNumber>
+    <city>Test City</city>
+    <zip>12345</zip>
+    <country>DE</country>
+    </addresses>
+</customer>

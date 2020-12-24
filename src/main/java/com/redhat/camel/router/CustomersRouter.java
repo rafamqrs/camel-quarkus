@@ -60,8 +60,6 @@ public class CustomersRouter extends RouteBuilder{
         .setHeader(Exchange.HTTP_RESPONSE_CODE, constant(204))
         .endRest();
 
-
-
         from("direct:customersall")
         .routeId("customersall")
         .to("sql:classpath:sql/queryallcustomers.sql");
@@ -82,6 +80,11 @@ public class CustomersRouter extends RouteBuilder{
         .routeId("customerdelete")
         .to("sql:classpath:sql/delete.sql");
 
+
+        //Working with files
+        from("file:{{customers.in.folder}}?antInclude=**/*.xml&move={{customers.out.folder}}")
+        .routeId("customersfile")
+        .log("Catched the file ${body}");
 
     }
     
